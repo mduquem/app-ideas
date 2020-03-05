@@ -1,0 +1,72 @@
+ul {
+   display: flex;
+   justify-content: center;
+}
+
+li {
+   width: 50px;
+   height: 50px;
+   border: 1px solid black;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+
+.light {
+   animation: light 1s infinite;
+}
+
+.normal {
+   animation: normalLight 1s infinite;
+}
+
+@keyframes light {
+   0% {
+      opacity: 20%;
+   }
+   50% {
+      opacity: 50%;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+
+@keyframes normalLight {
+   0% {
+      opacity: 100%;
+   }
+   50% {
+      opacity: 50%;
+   }
+   100% {
+      opacity: 20%;
+   }
+}
+
+.red {
+   background-color: red;
+}
+
+.orange {
+   background-color: orange;
+}
+
+.yellow {
+   background-color: yellow;
+}
+
+.green {
+   background-color: green;
+}
+
+.light-blue {
+   background-color: royalblue;
+}
+
+.blue {
+   background-color: blue;
+}
+
+.purple {
+   background-color: rebeccapurple;
+}
