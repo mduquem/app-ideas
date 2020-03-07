@@ -1,0 +1,9 @@
+li:hover {
+   background-color: grey;
+   opacity: 20%;
+}
+
+.clicked {
+   transform: scale(1.2);
+   color: blue;
+}
