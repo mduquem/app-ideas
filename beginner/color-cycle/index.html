@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Color Cycle</title>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <div class="container">
+         <div class="card ">
+            <div class="card-body">
+               <div class="row ">
+                  <div class="col-md-8 mx-auto">
+                     <h5>Color Cycle</h5>
+                     <form>
+                        <div class="form-group row">
+                           <input
+                              placeholder="Red"
+                              type="number"
+                              id="red"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                           <input
+                              placeholder="Blue"
+                              type="number"
+                              id="blue"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                           <input
+                              placeholder="Green"
+                              type="number"
+                              id="green"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                        </div>
+                        <div class="form-group row">
+                           <input
+                              placeholder="Red Increment"
+                              type="number"
+                              id="red-increment"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                           <input
+                              placeholder="Blue Increment"
+                              type="number"
+                              id="blue-increment"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                           <input
+                              placeholder="Green Increment"
+                              type="number"
+                              id="green-increment"
+                              class="form-control col"
+                              maxlength="3"
+                           />
+                        </div>
+                        <div class="col-md-8 max-auto form-group">
+                           <input
+                              placeholder="Timer"
+                              type="number"
+                              id="timer"
+                              class="form-control"
+                           />
+                        </div>
+                        <button
+                           id="submit"
+                           type="submit"
+                           class="btn btn-primary btn-block my-3"
+                        >
+                           Start
+                        </button>
+                     </form>
+
+                     <div class="row ">
+                        <div class="col-md-8 mx-auto">
+                           <h5>Box Color</h5>
+                           <div id="box"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
