@@ -5,29 +5,40 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link
+         href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css"
          rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-         integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
+         integrity="sha384-R/oa7KS0iDoHwdh4Gyl3/fU7pgvSCt7oyuQ79pkw+e+bMWD9dzJJa+Zqd+XJS0AD"
          crossorigin="anonymous"
       />
    </head>
    <body>
-      <div class="container">
+      <div class="container  mt-5">
          <h1>Bin2Dec Converter</h1>
          <p>
             Enter a binary number to calculate its decimal equivalent
          </p>
-
-         <div class="row">
-            <div class="eleven columns" id="form-input">
-               <label>Binary Number</label>
-               <input type="number" id="bin-number" class="u-full-width" />
-            </div>
-         </div>
-         <div class="row">
-            <div class="eleven columns">
-               <h4>Result in decimal:</h4>
-               <span id="dec-number"></span>
+         <div class="card">
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-md-12 mx-auto" id="form-input">
+                     <form id="before" class="form-group">
+                        <label>Binary Number</label>
+                        <input
+                           type="text"
+                           id="bin-number"
+                           class="form-control"
+                           max="1"
+                           min="0"
+                        />
+                     </form>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <h4>Result in decimal:</h4>
+                     <span id="dec-number"></span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>

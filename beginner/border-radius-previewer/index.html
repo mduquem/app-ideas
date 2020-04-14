@@ -5,25 +5,28 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>BorderRadiusPreviewer</title>
       <link
+         href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
          rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         integrity="sha384-4HfFay3AYJnEmbgRzxYWJk/Ka5jIimhB/Fssk7NGT9Tj3rkEChpSxLK0btOGzf2I"
          crossorigin="anonymous"
       />
    </head>
    <body>
-      <div class="container">
+      <div class="container mt-5">
          <div class="row">
             <div class="col-md-6 mx-auto">
-               <div class="card ">
+               <div class="card">
                   <div class="card-body">
                      <h3 class="card-title text-center">
-                        Border Radius Previewer
+                        Border Radius Generator
                      </h3>
-                     <div id="box" class="p-5 text-center">This is the box</div>
+                     <div id="box" class="p-5 text-center"></div>
                      <form>
                         <div class="form-group">
                            <label class="mt-3">Top-left</label>
+                           <small class="d-block"
+                              >Please fill it in a '1px' syntax style</small
+                           >
                            <input
                               type="text"
                               class="form-control mb-3"

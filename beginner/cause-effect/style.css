@@ -1,9 +1,9 @@
-li:hover {
-   background-color: grey;
-   opacity: 20%;
+.list > li:hover {
+   background-color: #3b92a3;
+   color: white;
 }
 
 .clicked {
-   transform: scale(1.2);
-   color: blue;
+   background-color: #3b92a3;
+   color: white;
 }

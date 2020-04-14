@@ -1,25 +1,5 @@
 const persons = [
    {
-      id: 1,
-      name: 'Miguel Duque',
-      street: 'Calle 56',
-      city: 'Bogotá',
-      state: 'D.C.',
-      country: 'Colombia',
-      phone: 5555555,
-      birthday: '30/07/1996'
-   },
-   {
-      id: 2,
-      name: 'Miguelo',
-      street: 'Carrera 16',
-      city: 'Pereira',
-      state: 'Risaralda',
-      country: 'Colombia',
-      phone: 5555555,
-      birthday: '30/07/1996'
-   },
-   {
       id: 3,
       name: 'John Doe',
       street: 'Elm Street',
@@ -27,7 +7,7 @@ const persons = [
       state: 'MA',
       country: 'United States',
       phone: 5555555,
-      birthday: '30/07/1987'
+      birthday: '30/07/1987',
    },
    {
       id: 4,
@@ -37,7 +17,7 @@ const persons = [
       state: 'Puerto Rico',
       country: 'United States',
       phone: 5555555,
-      birthday: '30/07/1986'
+      birthday: '30/07/1986',
    },
    {
       id: 5,
@@ -47,8 +27,8 @@ const persons = [
       state: 'FL',
       country: 'United States',
       phone: 5555555,
-      birthday: '30/07/1996'
-   }
+      birthday: '30/07/1996',
+   },
 ];
 
 const list = document.getElementById('persons');
@@ -58,6 +38,7 @@ for (let index = 0; index < persons.length; index++) {
    const newListItem = document.createElement('li');
    newListItem.appendChild(document.createTextNode(element.name));
    newListItem.setAttribute('id', element.id);
+
    newListItem.style.cursor = 'pointer';
    list.insertBefore(newListItem, list.childNodes[-1]);
 }
@@ -72,8 +53,12 @@ for (let index = 0; index < listNodes.length; index++) {
 function onClick(id) {
    removeClickedClass();
    document.getElementById(id).className = 'clicked';
-   const person = persons.filter(item => item.id === parseInt(id));
+   const person = persons.filter((item) => item.id === parseInt(id));
    const details = document.getElementById('details');
+   for (let index = 0; index < person.length; index++) {
+      const element = person[index];
+      console.log(element);
+   }
    details.innerHTML = `
    <p>Name: ${person[0].name}</p>
    <p>Street: ${person[0].street}</p>
