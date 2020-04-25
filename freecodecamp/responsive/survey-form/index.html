@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-4HfFay3AYJnEmbgRzxYWJk/Ka5jIimhB/Fssk7NGT9Tj3rkEChpSxLK0btOGzf2I"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 mx-auto mt-5">
+               <div class="card card-body bg-primary p-5">
+                  <h1 id="title" class="text-light">Appolo</h1>
+                  <p class="text-light" id="description">
+                     A simple survey for dog owners.
+                  </p>
+                  <form id="survey-form">
+                     <div class="form-group">
+                        <label id="name-label">Name</label>
+                        <input
+                           id="name"
+                           type="text"
+                           class="form-control"
+                           placeholder="First name ... and ... family name"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label id="email-label">Email</label>
+                        <input
+                           placeholder="email@email.com"
+                           id="email"
+                           type="email"
+                           class="form-control"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label id="number-label">Age Range</label>
+                        <input
+                           min="0"
+                           max="10"
+                           id="number"
+                           type="number"
+                           class="form-control"
+                           placeholder=""
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label id="dropdown-label"
+                           >How many dogs do you have?</label
+                        >
+                        <select
+                           id="dropdown"
+                           class="form-control"
+                           name=""
+                           id=""
+                        >
+                           <option value="one">1</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleFormControlTextarea1"
+                           >Example textarea</label
+                        >
+                        <textarea
+                           class="form-control"
+                           id="exampleFormControlTextarea1"
+                           rows="3"
+                        >
+Hola</textarea
+                        >
+                     </div>
+                     <button
+                        id="submit"
+                        type="submit"
+                        class="btn btn-secondary"
+                     >
+                        Go
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>

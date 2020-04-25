@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text&display=swap');
+
+$primary: #dee3f3;
+$text-primary: #0e1427;
+$font-family: 'Bellota Text', cursive;
+$btn-gradient: radial-gradient(
+   circle farthest-corner at 50.3% 44.5%,
+   rgba(116, 147, 179, 0.6) 0%,
+   rgba(62, 83, 104, 0.6) 100.2%
+);
+$btn-gradient-dark: radial-gradient(
+   circle farthest-corner at 50.3% 44.5%,
+   rgba(116, 147, 179, 1) 0%,
+   rgba(62, 83, 104, 1) 100.2%
+);
+
+body {
+   font-family: $font-family;
+   background: $primary;
+   color: $text-primary;
+}
+
+.container {
+   margin: 0;
+   padding: 0;
+}
+
+.card {
+   width: 750px;
+   padding: 50px;
+   margin: 150px auto;
+   border-radius: 50px;
+   background: $primary;
+   box-shadow: 20px 20px 60px #bdc1cf, -20px -20px 60px #ffffff;
+}
+
+.btn-primary {
+   background: $btn-gradient;
+   font-family: $font-family;
+   font-weight: 700;
+   color: white;
+   font-size: 16px;
+   width: 144px;
+   height: 60px;
+   border-radius: 50px;
+   box-shadow: 20px 20px 60px #bdc1cf, -20px -20px 60px #ffffff;
+   cursor: pointer;
+}
+
+.btn-primary:hover {
+   background: $btn-gradient-dark;
+}
+
+.btn-primary:active {
+   border-radius: 50px;
+   background: $btn-gradient;
+   box-shadow: 20px 20px 60px #bdc1cf, -20px -20px 60px #ffffff;
+}
